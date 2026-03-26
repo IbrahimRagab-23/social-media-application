@@ -5,7 +5,7 @@ import Home from "../pages/Home/Home"
 import Profile from "../pages/Profile/Profile"
 import About from "../pages/About/About"
 import Login from './components/Login/Login'
-import Register from './components/register/register'
+import Register from './components/Register/Register'
 import { HeroUIProvider } from '@heroui/react'
 import AuthContextProvider from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
