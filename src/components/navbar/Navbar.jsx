@@ -29,11 +29,11 @@ export default function Nav() {
     <>
     <Navbar className='bg-blue-600/5 border-b-2 border-blue-200/20 shadow-2xs py-2'>
       <NavbarBrand className=''>
-        <div className='flex justify-between items-center gap-2'>
+       {userToken && <div className='flex justify-between items-center gap-2'>
          {profileImg && <img src={profileImg} className='w-16 h-16 hidden md:block rounded-full' alt="Profile" />}  
           {profileUserName && <span className="hidden md:block">{profileUserName}</span>}
         
-        </div>
+        </div>}
       </NavbarBrand>
       {!isLoging && 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
