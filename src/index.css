@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin './hero.js';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+*{
+ font-family: "Tajawal", sans-serif;
+  font-weight:800;
+  font-style: normal;
+  
+}
+*{
+  box-sizing: border-box;
+}
+#LoginRCard .inputS{
+ @apply px-7.5 py-3 focus:outline-blue-400 rounded-2xl border-2 border-blue-800/40 w-full
+}
+#LoginRCard .btnArrow{
+  @apply group-hover:translate-x-0.5 group-hover:ease-in-out group-hover:transition-all group-hover:duration-700 -translate-x-1 pe-1 
+}
+#LoginRCard .CardLS{
+  @apply bg-white shadow-[0px_0px_4px] shadow-black/20 p-7 w-[90%] md:w-[80%] lg:w-[65%] rounded-4xl border border-gray-500/15 my-10}
+#LoginRCard .CardRS{
+  @apply bg-white shadow-[0px_0px_4px] shadow shadow-black/30 p-5 w-[95%] md:w-[80%] lg:w-[65%] rounded-4xl border border-gray-500/15 
+}
+form .btnL-S{
+  @apply flex justify-center items-center mt-1 w-full  rounded-[10px] hover:border-blue-800/40 border-2 border-transparent hover:text-blue-500 hover:transition-all hover:duration-500 hover:ease-in-out hover:border-2 hover:bg-white px-0.5 py-1.5  cursor-pointer bg-blue-500 text-white mb-5
+}
+ form .btnR-S{
+  @apply  w-full flex justify-center items-center  rounded-[10px] hover:border-blue-800/40 border-2 border-transparent hover:text-blue-800 hover:transition-all hover:duration-800 hover:ease-in-out hover:border-2  hover:from-white hover:to-white px-0.5 py-1.5  cursor-pointer bg-linear-to-r from-blue-500 to-blue-700 text-white mb-5 
+ }
+ form .icon-S{
+  @apply absolute top-[50%] -translate-y-[50%]  left-1.5 font-medium text-gray-900/50 
+ }
+ form .icon-L-S{
+  @apply absolute top-[50%]  left-1.5 font-medium text-gray-900/50 
+ }
+
+ 
