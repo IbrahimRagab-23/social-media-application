@@ -51,7 +51,7 @@ function handelUserImg(){
  const {mutate   }= useMutation({
     mutationFn: handelUserImg,
     onSuccess : ()=>{
-      toast.success("your photo updataed", {autoClose:2000 ,closeOnClick:true })
+      toast.success("your photo updated", {autoClose:2000 ,closeOnClick:true })
      onOpenChange(false)
     setprofileImg(dataProfileP?.photo)
     handelRefetch()
@@ -84,7 +84,7 @@ function handelUserImg(){
                
                   <Button  onPress={onOpen} >
                     
-                    UPDATA YOUR IMAGE
+                    UPDATE YOUR IMAGE
                     </Button>  
                            
                   </DropdownItem>
@@ -92,7 +92,7 @@ function handelUserImg(){
                  <Button className='dis' >
 
                 <label  className="cursor-pointer  flex  gap-2 justify-center items-center text-black">
-                               <GalleryAdd className="" size={22} /> UPDATA YOUR COVER
+                               <GalleryAdd className="" size={22} /> UPDATE YOUR COVER
                                <input  type="file" className="hidden" />
                              </label>
                  </Button>
@@ -175,7 +175,7 @@ function handelUserImg(){
     
       <>
         <ModalHeader className="flex flex-col text-center gap-1 py-5">
-          UPDATA YOUR IMAGE
+          UPDATE YOUR IMAGE
         </ModalHeader>
 
         <ModalBody className="overflow-y-auto px-6 py-4 scrollbar-thin">
@@ -200,7 +200,7 @@ function handelUserImg(){
 
             <div className="flex justify-between items-center gap-4 pt-3">
               <label className="cursor-pointer flex  gap-2 justify-center items-center text-black">
-                               <User className="" size={22} /> UPDATA YOUR IMAGE
+                               <User className="" size={22} /> UPDATE YOUR IMAGE
                                <input ref={userImgInput} onChange={handelinputImg} type="file" className="hidden" />
                              </label>
 
@@ -210,7 +210,7 @@ function handelUserImg(){
                 
                 className="px-8 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full text-base transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
               >
-                UPDATA
+                UPDATE
               </button>
             </div>
           </div>
