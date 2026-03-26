@@ -17,7 +17,7 @@ import ChangePassword from '../pages/ChangePassword/ChangePassword'
 const router = createBrowserRouter([
     {path:"/",element:<Layout/>
     ,children:[
-    {path:"/Login", element:<GuestRoute><Login/></GuestRoute>},
+    {index:true, element:<GuestRoute><Login/></GuestRoute>},
     {path:"/Register", element:<GuestRoute><Register/></GuestRoute>},
     {path:"/Home", element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:"/Profile", element:<ProtectedRoute><Profile/></ProtectedRoute>},
